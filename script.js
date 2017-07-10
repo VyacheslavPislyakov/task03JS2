@@ -14,7 +14,9 @@ for (var i = 1; i < 10; i++) {
 			wS.write(rawData);
 		});
 		res.on('end', () => {
+			// var a = process.stdout.write(JSON.parse(rawData).name);
 			wS.write('\n');
+			// wS.write(a);
 		})
 	}).on('error', (e) => {
 		console.error('Got error: ${e.message}');
