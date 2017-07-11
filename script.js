@@ -27,6 +27,6 @@ for (var i = 1; i < 20; i++) {
 		});
 		res.on('end', () => {})
 	}).on('error', (e) => {
-		console.error('Got error: ${e.message}');
+		console.error('Got error: ' + e.message);
 	})
 }

@@ -18,7 +18,12 @@ var getContent = function(url) {
 						testObj[item] = parseData[item]
 					}
 				}
-				resolve(wS.write(JSON.stringify(testObj)));
+				if (Object.keys(testObj).length !== 0) {
+					resolve(wS.write(JSON.stringify(testObj)));
+				} else {
+					console.log(testObj);
+				}
+				// resolve(wS.write(JSON.stringify(testObj)));
 				// resolve(wS.write(JSON.stringify(testObj)));
 				// resolve(console.log());
 			});
@@ -29,7 +34,7 @@ var getContent = function(url) {
 }
 
 
-for (var i = 1; i < 10; i++) {
+for (var i = 1; i < 20; i++) {
 	getContent('http://swapi.co/api/people/' + i + '/')
 		.then((data) => {
 			console.log('================');
