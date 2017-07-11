@@ -7,13 +7,13 @@
 	"vehicles": ["http://swapi.co/api/vehicles/44/", "http://swapi.co/api/vehicles/46/"],
 	"url": "http://swapi.co/api/people/11/"
 } {
-	"name": "Luke Skywalker",
-	"gender": "male",
-	"homeworld": "http://swapi.co/api/planets/1/",
+	"name": "Leia Organa",
+	"gender": "female",
+	"homeworld": "http://swapi.co/api/planets/2/",
 	"films": ["http://swapi.co/api/films/2/", "http://swapi.co/api/films/6/", "http://swapi.co/api/films/3/", "http://swapi.co/api/films/1/", "http://swapi.co/api/films/7/"],
 	"species": ["http://swapi.co/api/species/1/"],
-	"vehicles": ["http://swapi.co/api/vehicles/14/", "http://swapi.co/api/vehicles/30/"],
-	"url": "http://swapi.co/api/people/1/"
+	"vehicles": ["http://swapi.co/api/vehicles/30/"],
+	"url": "http://swapi.co/api/people/5/"
 } {
 	"name": "Wedge Antilles",
 	"gender": "male",
@@ -23,13 +23,13 @@
 	"vehicles": ["http://swapi.co/api/vehicles/14/"],
 	"url": "http://swapi.co/api/people/18/"
 } {
-	"name": "Leia Organa",
-	"gender": "female",
-	"homeworld": "http://swapi.co/api/planets/2/",
+	"name": "Luke Skywalker",
+	"gender": "male",
+	"homeworld": "http://swapi.co/api/planets/1/",
 	"films": ["http://swapi.co/api/films/2/", "http://swapi.co/api/films/6/", "http://swapi.co/api/films/3/", "http://swapi.co/api/films/1/", "http://swapi.co/api/films/7/"],
 	"species": ["http://swapi.co/api/species/1/"],
-	"vehicles": ["http://swapi.co/api/vehicles/30/"],
-	"url": "http://swapi.co/api/people/5/"
+	"vehicles": ["http://swapi.co/api/vehicles/14/", "http://swapi.co/api/vehicles/30/"],
+	"url": "http://swapi.co/api/people/1/"
 } {
 	"name": "Obi-Wan Kenobi",
 	"gender": "male",
