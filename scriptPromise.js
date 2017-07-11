@@ -12,7 +12,6 @@ var getContent = function(url) {
 				rawData += chuk;
 				parseData = JSON.parse(rawData);
 				var testObj = {};
-				// console.log(testObj.length);
 				for (var item in parseData) {
 					if ((item === 'name' || item === 'gender' || item === 'homeworld' || item === 'films' || item === 'species' || item === 'url' || item === 'vehicles') && (parseData['vehicles'].length !== 0)) {
 						testObj[item] = parseData[item]
@@ -23,11 +22,8 @@ var getContent = function(url) {
 				} else {
 					console.log(testObj);
 				}
-				// resolve(wS.write(JSON.stringify(testObj)));
-				// resolve(wS.write(JSON.stringify(testObj)));
-				// resolve(console.log());
 			});
-			response.on('end', () => {});
+			response.on('end', () => {console.log('1');});
 		});
 		request.on('error', (error) => reject(error))
 	});
@@ -37,8 +33,7 @@ var getContent = function(url) {
 for (var i = 1; i < 20; i++) {
 	getContent('http://swapi.co/api/people/' + i + '/')
 		.then((data) => {
-			console.log('================');
-			// console.log(data);
+			console.log();
 		})
 		.catch(err => {
 			console.log(err.message)

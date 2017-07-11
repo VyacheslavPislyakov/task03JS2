@@ -11,7 +11,6 @@ for (var i = 1; i < 20; i++) {
 		res.on('data', (chuk) => {
 			rawData += chuk + '\n';
 			var parseData = JSON.parse(rawData);
-			// console.log(parseData);
 			for (var item in parseData) {
 				if (item === 'vehicles' && parseData[item].length !== 0) {
 					var testObj = {};
